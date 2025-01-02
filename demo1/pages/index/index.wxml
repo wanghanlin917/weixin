@@ -1,0 +1,16 @@
+<view class="nav">
+<text class="active">精选</text>
+<text>手机</text>
+<text>食品</text>
+<text>内衣</text>
+<text>生鲜</text>
+<text>母婴</text>
+</view>
+<!--页面数据绑定-->
+<view>{{msg}}</view>
+<!--tap是点击事件-->
+<button type="primary" bind:tap="changeMsg">修改</button>
+<!--相对路径-->
+<navigator url="../logs/logs">跳转日志</navigator>
+<!--绝对路径-->
+<navigator url="/pages/logs/logs">跳转日志</navigator>

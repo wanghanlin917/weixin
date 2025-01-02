@@ -1,0 +1,12 @@
+.nav{
+  background-color: pink;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+  font-size: 14px;
+}
+.active{
+  color: yellow;
+  border-bottom: 1px solid yellow;
+}
