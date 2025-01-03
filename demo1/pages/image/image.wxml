@@ -1,0 +1,7 @@
+<swiper indicator-dots autoplay circular>
+<swiper-item>1</swiper-item>
+<swiper-item>2</swiper-item>
+<swiper-item>3</swiper-item>
+</swiper>
+
+<image class="pic" mode="aspectFit" src="/static/images/hd.jpg"></image>

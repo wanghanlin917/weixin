@@ -1,5 +1,7 @@
 {
+  "entryPagePath":"pages/image/image",
   "pages": [
+    "pages/image/image",
     "pages/index/index",
     "pages/logs/logs"
   ],
