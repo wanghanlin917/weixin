@@ -11,6 +11,6 @@
 <!--tap是点击事件-->
 <button type="primary" bind:tap="changeMsg">修改</button>
 <!--相对路径-->
-<navigator url="../logs/logs">跳转日志</navigator>
+<navigator open-type="switchTab" url="../logs/logs">跳转日志</navigator>
 <!--绝对路径-->
 <navigator url="/pages/logs/logs">跳转日志</navigator>
