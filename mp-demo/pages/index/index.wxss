@@ -1,0 +1,15 @@
+.students {
+  background-color: #fff;
+  padding: 20rpx;
+  margin-top: 20rpx;
+}
+
+.students .item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.history {
+  margin-top: 20rpx;
+  background-color: #fff;
+}

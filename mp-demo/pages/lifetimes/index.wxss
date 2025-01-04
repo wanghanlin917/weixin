@@ -1,0 +1,54 @@
+/* pages/lifetimes/index.wxss */
+.history {
+  padding: 30rpx 20rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+
+.history .title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+  padding-left: 20rpx;
+  font-size: 30rpx;
+}
+
+.history .keywords {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+}
+
+.history .keywords navigator {
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  padding: 8rpx 28rpx;
+  border-radius: 50rpx;
+  background-color: #f7f6f7;
+  font-size: 28rpx;
+}
+
+.form-field {
+  display: flex;
+  padding: 30rpx 20rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+
+.form-field .label {
+  width: 260rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+  border-radius: 10rpx;
+  background-color: #5591AF;
+}
+
+.form-field input {
+  flex: 1;
+  height: 52rpx;
+  margin-right: 20rpx;
+  border: 1rpx solid #eee;
+}

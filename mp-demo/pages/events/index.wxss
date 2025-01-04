@@ -1,0 +1,94 @@
+/* pages/events/index.wxss */
+/* pages/events/index.wxss */
+page {
+  padding: 0;
+}
+
+.search-bar {
+  padding: 20rpx 30rpx;
+  background-color:#fff;
+}
+
+.search-bar input {
+  padding-left: 40rpx;
+  border: 1rpx solid #eee;
+  border-radius: 70rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.page-body {
+  height: 420rpx;
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.page-body .aside {
+  width: 200rpx;
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+.page-body .aside .item {
+  height: 60rpx;
+  margin-bottom: 20rpx;
+  border-radius: 10rpx;
+  background-color: #eee
+}
+
+.page-body .aside .active {
+  background-color: pink;
+}
+
+.page-body .content {
+  flex: 1;
+  padding: 20rpx;
+  margin-left: 20rpx;
+  background-color: #fff;
+}
+
+.page-body .content .item {
+  float: left;
+  width: 215rpx;
+  height: 215rpx;
+  margin: 0 20rpx 20rpx 0;
+  border-radius: 10rpx;
+  background-color: #eee;
+}
+
+.page-body .content .item:nth-child(even) {
+  margin-right: 0;
+}
+
+.register {
+  margin-top: 20rpx;
+}
+
+.register .form-field {
+  display: flex;
+  padding: 0 40rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: #fff;
+  color: #333;
+}
+
+.register .form-field label {
+  width: 120rpx;
+}
+
+.register .form-field .field {
+  flex: 1;
+}
+
+.register .form-field input {
+  height: 60rpx;
+  border: none;
+}
+
+.register button {
+  display: block;
+  height: 72rpx;
+  line-height: 72rpx;
+  margin: 20rpx 40rpx 0;
+}

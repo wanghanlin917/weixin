@@ -1,0 +1,51 @@
+<!-- 按钮 -->
+<button class="button" size="mini" type="primary" bind:tap="onGetList">
+  查询书单
+</button>
+<!-- 书单列表 -->
+<view class="books">
+  <!-- 标题 -->
+  <view class="item">
+    <text>序号</text>
+    <text>名称</text>
+    <text>作者</text>
+    <text>出版社</text>
+    <text>操作</text>
+  </view>
+  <!-- 内容 -->
+  <view wx:for="{{ books }}" wx:key="id" class="item">
+    <text>{{ item.id }}</text>
+    <text>{{ item.bookname }}</text>
+    <text>{{ item.author }}</text>
+    <text>{{ item.publisher }}</text>
+    <text>删除</text>
+  </view>
+</view>
+
+<!-- 本地存储 -->
+<view class="storage">
+  <button bind:tap="onSave" size="mini" type="primary">存数据</button>
+  <button bind:tap="onGet" size="mini" type="primary">读数据</button>
+  <button bind:tap="onRemove" size="mini" type="primary">删数据</button>
+  <button bind:tap="onClear" size="mini" type="primary">清数据</button>
+</view>
+
+<view class="preview" bind:tap="onChoose">
+  <image src="{{ avatar }}" mode="aspectFill" />
+</view>
+
+<!-- 搜索历史 -->
+<view class="history">
+  <view class="search-bar">
+    <input type="text" />
+    <text class="label">搜索</text>
+  </view>
+  <view class="title">
+    历史搜索 <text class="icon-delete">x</text>
+  </view>
+  <view class="keywords">
+    <navigator url="/pages/test/index">小米</navigator>
+    <navigator url="/pages/test/index">苹果</navigator>
+    <navigator url="/pages/test/index">华为</navigator>
+  </view>
+</view>

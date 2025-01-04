@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/lifetimes/index",
+    "pages/events/index",
+    "pages/interface/index",
+    "pages/test/index"
+  ],
+  "entryPagePath": "pages/events/index",
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "学习小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8e8e92",
+    "selectedColor": "#5591af",
+    "list": [
+      {
+        "text": "数据渲染",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/render-default.png",
+        "selectedIconPath": "static/tabbar/render-active.png"
+      },
+      {
+        "text": "内置接口",
+        "pagePath": "pages/interface/index",
+        "iconPath": "static/tabbar/interface-default.png",
+        "selectedIconPath": "static/tabbar/interface-active.png"
+      },
+      {
+        "text": "事件处理",
+        "pagePath": "pages/events/index",
+        "iconPath": "static/tabbar/events-default.png",
+        "selectedIconPath": "static/tabbar/events-active.png"
+      },
+      {
+        "text": "生命周期",
+        "pagePath": "pages/lifetimes/index",
+        "iconPath": "static/tabbar/lifetimes-default.png",
+        "selectedIconPath": "static/tabbar/lifetimes-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

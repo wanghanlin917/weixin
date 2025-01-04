@@ -1,0 +1,67 @@
+<!-- 
+  checked  (boolean) 是否选中
+  🚨注意事项：花括号和引号之间不要出现多余的空格  
+-->
+<switch checked="{{ isCheck }}" />
+
+<!-- 
+  model:value    简易双向绑定
+-->
+<view>{{ msg }}</view>
+<input type="text" model:value="{{ msg }}" />
+
+<!-- 条件渲染 -->
+<view>
+  <text>用户名称：</text>
+  <text wx:if="{{ isLogin }}">悟空用户</text>
+  <text wx:else>游客</text>
+</view>
+
+<!-- 
+  hidden 属性是 display:none; 快捷写法
+  如果需要反复显示和隐藏：使用 hidden 修改样式更合适
+ -->
+<view hidden="{{ isHidden }}">
+  ------
+  可以显示和隐藏的详细说明1 - hidden
+</view>
+<!-- 
+  wx:if 渲染节点，和 hidden 逻辑相反
+-->
+<view wx:if="{{ !isHidden }}">
+  ------
+  可以显示和隐藏的详细说明2 - wx:if
+</view>
+
+<!-- 列表渲染 -->
+<view class="students">
+  <!-- 标题 -->
+  <view class="item">
+    <text>序号</text>
+    <text>姓名</text>
+    <text>年龄</text>
+    <text>性别</text>
+    <text>级别</text>
+  </view>
+  <!-- 内容 -->
+  <view 
+    class="item" 
+    wx:for="{{ students }}" 
+    wx:key="id"
+  >
+    <text>{{ item.id }}</text>
+    <text>{{ item.name }}</text>
+    <text>{{ item.age }}</text>
+    <text>{{ item.gender }}</text>
+    <text>{{ item.level }}</text>
+  </view>
+</view>
+
+<!-- 简单数组 -->
+<view class="history">
+  <text 
+    wx:for="{{ history }}" 
+    wx:key="*this" 
+    wx:for-item="goods"
+  >{{ goods }} </text>
+</view>

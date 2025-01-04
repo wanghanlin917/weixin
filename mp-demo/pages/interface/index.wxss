@@ -1,0 +1,140 @@
+/* pages/interface/index.wxss */
+.button {
+  margin-top: 10rpx;
+}
+
+.books {
+  padding: 0 20rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+
+.books .item {
+  display: flex;
+  justify-content: space-between;
+  height: 44rpx;
+  padding: 20rpx 0;
+  text-align: center;
+  border-bottom: 1rpx solid #eee;
+}
+
+.books .item:last-child {
+  border-bottom: none;
+}
+
+.books .item text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.books .item text:first-child {
+  width: 80rpx;
+}
+
+.books .item text:nth-child(2) {
+  width: 180rpx;
+}
+
+.books .item text:nth-child(3) {
+  width: 140rpx;
+}
+
+.books .item text:nth-child(4) {
+  flex: 1;
+}
+
+.books .item text:last-child {
+  width: 80rpx;
+}
+
+.storage {
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx 0;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+
+.storage button {
+  margin: 0;
+}
+
+
+.preview {
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  background-image: url(https://lotjol.github.io/static-store/enjoy-plus/images/upload.png);
+  background-size: 80rpx;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.preview image {
+  width: 100%;
+  height: 100%;
+}
+
+.history {
+  margin-top: 20rpx;
+  padding: 30rpx 20rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+
+.history .search-bar {
+  display: flex;
+}
+
+.history .search-bar .label {
+  width: 90rpx;
+  margin-right: 10rpx;
+  text-align: right;
+  line-height: 70rpx;
+}
+
+.history .search-bar input {
+  flex: 1;
+  padding-left: 40rpx;
+  border-radius: 60rpx;
+}
+
+.history .title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+  padding-left: 20rpx;
+  font-size: 30rpx;
+}
+
+.history .title .icon-delete {
+  width: 36rpx;
+  height: 36rpx;
+  text-align: center;
+  line-height: 32rpx;
+  border-radius: 50%;
+  color: #fff;
+  transform: scale(0.9);
+  background-color: #ccc;
+}
+
+.history .keywords {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+}
+
+.history .keywords navigator {
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  padding: 8rpx 28rpx;
+  border-radius: 50rpx;
+  background-color: #f7f6f7;
+  font-size: 28rpx;
+}

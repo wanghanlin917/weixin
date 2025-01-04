@@ -1,0 +1,32 @@
+<!-- 搜索框 -->
+<view class="search-bar">
+  <input type="text" placeholder="输入搜索关键字" />
+</view>
+<!-- 页面主体 -->
+<view class="page-body">
+  <scroll-view scroll-y class="aside">
+    <view 
+      wx:for="{{ 6 }}"
+      wx:key="*this" 
+      class="item {{ activeIndex === index ? 'active' : '' }}"
+      bind:tap="changeIndex"
+      mark:index="{{ index }}"
+      data-index="{{ index }}"
+    >
+      {{ index }}
+      </view>
+  </scroll-view>
+  <scroll-view 
+    class="content"
+    
+    scroll-y 
+    lower-threshold="0"
+    bind:scrolltolower="onScrolltolower"
+
+    refresher-enabled
+    bind:refresherrefresh="onRefresherrefresh"
+    refresher-triggered="{{ triggered }}"
+  >
+    <view wx:for="{{ 6 }}" wx:key="*this" class="item"></view>
+  </scroll-view>
+</view>
