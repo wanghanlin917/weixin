@@ -3,7 +3,7 @@
   "projectname": "miniprogram-92",
   "setting": {
     "compileHotReLoad": true,
-    "urlCheck": true
+    "urlCheck": false
   },
   "libVersion": "2.19.4"
 }

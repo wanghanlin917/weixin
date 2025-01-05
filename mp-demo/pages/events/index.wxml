@@ -18,7 +18,6 @@
   </scroll-view>
   <scroll-view 
     class="content"
-    
     scroll-y 
     lower-threshold="0"
     bind:scrolltolower="onScrolltolower"
@@ -26,7 +25,7 @@
     refresher-enabled
     bind:refresherrefresh="onRefresherrefresh"
     refresher-triggered="{{ triggered }}"
-  >
+  > 
     <view wx:for="{{ 6 }}" wx:key="*this" class="item"></view>
   </scroll-view>
 </view>
