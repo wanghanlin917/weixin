@@ -1,0 +1,19 @@
+.nav {
+  height: 100rpx;
+  background-color: #00B26A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+
+.back {
+  position: absolute;
+  left: 10px;
+  width: 44rpx;
+  height: 44rpx;
+  background-image: url(https://lotjol.github.io/static-store/enjoy-plus/images/back-arrow.svg);
+  background-repeat: no-repeat;
+}

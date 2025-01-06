@@ -1,0 +1,18 @@
+<!-- 自定义导航栏 -->
+<my-nav back="{{ false }}" bind:get-top="getNavTop">
+  自定义导航栏
+</my-nav>
+
+<!-- 跳转到登录页 -->
+<navigator url="/pages/login/index">去登录页</navigator>
+
+<!-- 
+  🟢 组件库安装和使用步骤 🟢
+  https://vant-contrib.gitee.io/vant-weapp/#/quickstart 
+-->
+<!-- 使用组件库的组件 -->
+<van-button type="default">默认按钮</van-button>
+<van-button type="primary">主要按钮</van-button>
+<van-button type="info">信息按钮</van-button>
+<van-button type="warning">警告按钮</van-button>
+<van-button type="danger">危险按钮</van-button>

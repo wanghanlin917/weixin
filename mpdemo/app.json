@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/framework/index",
+    "pages/component/index",
+    "pages/login/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "学习小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#5591af",
+    "list": [
+      {
+        "text": "分包加载",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabbar/subpackage_default.png",
+        "selectedIconPath": "static/tabbar/subpackage_active.png"
+      },
+      {
+        "text": "自定义组件",
+        "pagePath": "pages/component/index",
+        "iconPath": "static/tabbar/component_default.png",
+        "selectedIconPath": "static/tabbar/component_active.png"
+      },
+      {
+        "text": "框架接口",
+        "pagePath": "pages/framework/index",
+        "iconPath": "static/tabbar/framework_default.png",
+        "selectedIconPath": "static/tabbar/framework_active.png"
+      }
+    ]
+  },
+  "subPackages": [
+    {
+      "root": "subPack",
+      "pages": [
+        "pages/sub/sub",
+        "pages/test/index"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/index/index": {
+      "network": "all",
+      "packages": [
+        "subPack"
+      ]
+    }
+  },
+  "usingComponents": {
+    "van-nav-bar": "@vant/weapp/nav-bar/index",
+    "van-button": "@vant/weapp/button/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

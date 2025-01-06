@@ -1,0 +1,19 @@
+<view 
+  class="nav custom-class" 
+  style="padding-top: {{ top }}px;"
+>
+  <!-- 返回按钮 -->
+  <navigator 
+    class="back"
+    wx:if="{{ back }}" 
+    open-type="navigateBack" 
+  >
+  </navigator>
+  
+  <!-- 具名插槽 -->
+  <slot name="left" />
+  <!-- 默认插槽 -->
+  <slot />
+</view>
+
+<button size="mini" type="primary" bind:tap="onClick">内部按钮</button>

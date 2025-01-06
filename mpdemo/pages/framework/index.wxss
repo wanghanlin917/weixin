@@ -1,0 +1,50 @@
+/* pages/framework/index.wxss */
+page {
+  padding: 0;
+}
+
+.profile {
+  height: 300rpx;
+  padding: 80rpx 40rpx 0;
+  border-radius: 0 0 40rpx 40rpx;
+  background-color: #6394c0;
+}
+
+.profile-base {
+  display: flex;
+  align-items: center;
+}
+
+.profile-base .avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-image: url(https://lotjol.github.io/static-store/enjoy-plus/images/user_placeholder.png);
+  background-size: cover;
+}
+
+.profile-base .nickname {
+  margin-left: 20rpx;
+  font-size: 36rpx;
+  color: #fff;
+}
+
+.profile-base .link {
+  flex: 1;
+  margin-left: 100rpx;
+  text-align: right;
+  color: #fff;
+  font-size: 30rpx;
+}
+
+.profile-extra {
+  height: 300rpx;
+  padding: 10rpx 30rpx;
+  margin-top: 70rpx;
+  background-color: #fff;
+  border-radius: 16rpx;
+}
+
+.desc, .tips {
+  margin: 20rpx 0;
+}

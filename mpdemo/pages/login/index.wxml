@@ -1,0 +1,13 @@
+<!--pages/login/index.wxml-->
+<my-nav back="{{ true }}">登录页标题</my-nav>
+
+<view class="login">
+  <view class="form-field">
+    <input type="text" placeholder="请输入手机号" />
+    <text class="label">获取短信验证码</text>
+  </view>
+  <view class="form-field">
+    <input type="text" placeholder="请输入短信验证码" />
+  </view>
+  <button>登录</button>
+</view>

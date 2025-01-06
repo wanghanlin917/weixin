@@ -1,0 +1,13 @@
+<!--pages/framework/index.wxml-->
+<view class="profile">
+  <view class="profile-base">
+    <image class="avatar" src="" mode="aspectFill"/>
+    <view class="nickname">微信用户</view>
+    <navigator hover-class="none" class="link" url="">
+      去完善信息
+    </navigator>
+  </view>
+  <view class="profile-extra">
+  
+  </view>
+</view>

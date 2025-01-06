@@ -5,5 +5,32 @@
     "compileHotReLoad": true,
     "urlCheck": false
   },
-  "libVersion": "2.19.4"
+  "libVersion": "2.19.4",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/interface/index",
+          "pathName": "pages/interface/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/lifetimes/index",
+          "pathName": "pages/lifetimes/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "pages/lifetimes/index",
+          "pathName": "pages/lifetimes/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
 }

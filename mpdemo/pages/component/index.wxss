@@ -1,0 +1,16 @@
+/* pages/component/index.wxss */
+page {
+  padding: 0;
+}
+
+.nav {
+  background-color: orange !important;
+}
+/* 外部样式类 */
+.bgpink {
+  background-color: pink !important;
+}
+
+.bgpurple {
+  background-color: purple !important;
+}
