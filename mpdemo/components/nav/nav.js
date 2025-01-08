@@ -29,7 +29,11 @@ Component({
     attached() {
       // 获取系统信息
       const systemInfo = wx.getSystemInfoSync()
-      // console.log(systemInfo.statusBarHeight);
+      console.log("hahahah");
+      // const systemInfo = wx.getWindowInfo()
+      
+      // console.log(windowInfo.pixelRatio)
+      console.log(systemInfo.statusBarHeight);
       // 更新视图层
       this.setData({
         top: systemInfo.statusBarHeight
