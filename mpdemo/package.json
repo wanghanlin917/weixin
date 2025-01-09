@@ -1,5 +1,14 @@
 {
   "dependencies": {
-    "@vant/weapp": "^1.10.23"
-  }
+    "@vant/weapp": "^1.11.7"
+  },
+  "name": "mpdemo",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

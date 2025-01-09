@@ -1,5 +1,8 @@
 // pages/framework/index.js
 Page({
+  setToken(){
+    getApp()
+  },
 
   /**
    * 页面的初始数据

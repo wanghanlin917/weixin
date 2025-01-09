@@ -8,6 +8,7 @@
     </navigator>
   </view>
   <view class="profile-extra">
+  <button type="primary" bind:tap="setToken">设置全局</button>
   
   </view>
 </view>
