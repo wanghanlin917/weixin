@@ -21,7 +21,7 @@
       </view>
     </van-field>
     <van-field
-      model:value="{{code}}"
+      model:value="{{v_code}}"
       placeholder="请输入6位验证码"
       type="number"
       maxlength="{{6}}"

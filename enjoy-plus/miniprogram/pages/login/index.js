@@ -5,7 +5,7 @@ Page({
   data: {
     countDownVisible: false,
     mobile:'',
-    code:'',
+    v_code:'',
   },
     // 定义表单数据的验证规则
     rules: {
@@ -13,7 +13,7 @@ Page({
         { required: true, message: '请填写手机号码!' },
         { pattern: /^1[3-9]\d{9}$/, message: '请检查手机号码是否正确!' },
       ],
-      code: [
+      v_code: [
         { required: true, message: '请填写短信验证码!' },
         { pattern: /^\d{6}$/, message: '请检查短信验证码是否正确!' }
       ]
@@ -27,6 +27,7 @@ Page({
   },
   getSMSCode(){
     // 校验通过后才发送请求
+    console.log("校验",this.validate('mobile'));
     const {valid,message} = this.validate('mobile')
     if(valid){
       this.setData({
@@ -41,8 +42,8 @@ Page({
   async onSubmit(){
     const isValidate = this.validate()
     if(isValidate){
-      const {mobile,code} = this.data
-      const res =await wx.http.post('/login',{mobile,code})
+      const {mobile,v_code} = this.data
+      const res =await wx.http.post('/login',{mobile,v_code})
       const app = getApp()
       app.token = res.data.token
       wx.setStorageSync('token',res.data.token)
