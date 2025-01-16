@@ -9,7 +9,13 @@ wx.http = http
 wx.utils = utils
 App({
   token: wx.getStorageSync('token'),
-  globalData: {}
+  globalData: {},
+  setToken (key, token) {
+    // 保存token到全局App
+    this[key] = token
+    // 保存token到本地缓存
+    wx.setStorageSync(key, token)
+  }
   // onLaunch () {
   //   // 获取 tokeen
   //   wx.getStorageSync()

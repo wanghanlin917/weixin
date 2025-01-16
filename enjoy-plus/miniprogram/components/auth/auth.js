@@ -30,10 +30,17 @@ Component({
       if (isLogin === false) {
         // wx.navigateTo({
         //   url: '/pages/login/index'
-        // })
-        // 关闭当前页面，跳转到应用中某个页面
+        // }) == vue中的 this.$router.push()
+
+        // wx.redirectTo关闭当前页面，跳转到应用中某个页面 == this.$router.replace()
+        // 获取页面栈
+
+        const pages = getCurrentPages() //返回的是数组
+        // 获取当前页面的示例
+        const page = pages[pages.length - 1]
+
         wx.redirectTo({
-          url: '/pages/login/index'
+          url: '/pages/login/index?redirectUrl=/' + page.route
         })
       }
     }
