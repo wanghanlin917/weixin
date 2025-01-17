@@ -2,6 +2,17 @@ import http from 'wechat-http'
 
 http.baseURL = 'http://127.0.0.1:8000/api'
 
+// 请求拦截器
+http.intercept.request = (config)=>{
+  // config.header.Authorization = wx.getStorageSync('token')
+  config.header = {
+    // 携带token信息
+    Authorization:wx.getStorageSync('token'),
+    // 如果有传递header信息，可覆盖默认的header信息
+    ...config.header
+  }
+  return config
+}
 // 响应拦截器，返回核心数据 data
 http.intercept.response = ({ data }) => {
   if (data.code === 0) {
@@ -12,7 +23,7 @@ http.intercept.response = ({ data }) => {
     const err = data[firstKey]
     console.log('拦截器', err)
     const errKey = Object.keys(err)[0]
-    const errInfo = err[errKey]
+    const errInfo = err[errKey] 
     console.log(errInfo)
     wx.utils.toast(errInfo[0] || '业务出错')
     // return data
