@@ -65,5 +65,6 @@ Page({
         url: this.query.redirectUrl || '/pages/index/index'
       })
     }
+    
   }
 })
