@@ -5,7 +5,8 @@ Page({
     })
   },
   data:{
-    userInfo:{},
+    userInfo:{
+    },
   },
   onShow(){ // 每次显示页面都会触发
     const token = wx.getStorageSync('token')
@@ -15,11 +16,12 @@ Page({
 
   },
   // 获取用户信息
-  getUserInfo(){
-    const res = wx.http.get('/userInfo')
+  async getUserInfo(){
+    const res = await wx.http.get('/userInfo')
     console.log("ssss",res.data);
     this.setData({
       userInfo:res.data
     })
+    // console.log(this.data.userInfo);
   }
 })

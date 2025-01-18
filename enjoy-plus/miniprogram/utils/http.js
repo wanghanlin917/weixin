@@ -24,7 +24,7 @@ http.intercept.response = ({ data }) => {
     console.log('拦截器', err)
     const errKey = Object.keys(err)[0]
     const errInfo = err[errKey] 
-    console.log(errInfo)
+    console.log("xxxx",errInfo)
     wx.utils.toast(errInfo[0] || '业务出错')
     // return data
     return Promise.reject(data)
