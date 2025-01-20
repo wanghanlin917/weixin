@@ -3,7 +3,7 @@
     <van-cell center title="头像">
       <van-icon slot="right-icon" name="arrow" size="16" color="#c3c3c5" />
       <button class="button" size="mini" hover-class="none" open-type="chooseAvatar" bind:chooseavatar="updateAvatar">
-        <image class="avatar" mode="aspectFill" src="{{userInfo.avatar || '/static/images/avatar_1.jpg'}}"></image>
+        <image class="avatar" mode="aspectFill" src="{{userInfo.avatar_url || '/static/images/avatar_1.jpg'}}"></image>
       </button>
     </van-cell>
     <van-field
@@ -13,7 +13,7 @@
       type="nickname"
       bind:blur="updateNickName"
       placeholder="请输入昵称"
-      value="{{userInfo[0].nickName}}"
+      value="{{userInfo.nickName}}"
     />
   </view>
 </auth>
