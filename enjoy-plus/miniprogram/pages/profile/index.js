@@ -47,7 +47,7 @@ Page({
     //     )
     //   }  
     // })
-    const res = await wx.http.upload('/upload',{
+    const res = await wx.http.upload('/userInfo/upload1',{
       name:"file",
       filePath:e.detail.avatarUrl,
       formData:{
@@ -55,7 +55,8 @@ Page({
       }
     })
     this.setData({
-      'userInfo.avatar':res.data.url
+      // 'userInfo.avatar':res.data.url
+      'userInfo.avatar':'http://127.0.0.1:8000/media/upload/avatar/HdqQErHzQIjWe2f8971fb5092f4afdd101d1304deca6.jpg'
     })
     console.log(res);
 
