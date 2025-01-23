@@ -1,4 +1,16 @@
 Page({
+
+  // 页面显示，获取房屋列表
+  onShow(){
+
+  },
+
+  async getList(){
+    const res = await wx.http.get('room')
+    this.setData({
+      list:res.data
+    })
+  },
   data: {
     dialogVisible: false,
   },

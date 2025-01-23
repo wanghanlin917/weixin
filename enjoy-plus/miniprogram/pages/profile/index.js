@@ -45,7 +45,7 @@ Page({
     //     )
     //   }
     // })
-    const res = await wx.http.upload('/userInfo/upload1', {
+    const res = await wx.http.upload('/userInfo/upload', {
       name: 'file',
       filePath: e.detail.avatarUrl,
       formData: {

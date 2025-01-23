@@ -37,7 +37,13 @@ Component({
 
         const pages = getCurrentPages() //返回的是数组
         // 获取当前页面的示例
-        const page = pages[pages.length - 1]
+        const page = pages[pages.length - 1] 
+        // 重写页面的周期函数，避免一些不必要的加载
+        page.onLoad = () =>{
+          console.log('onLoad');
+        }
+        page.onShow =() =>{}
+        page.onReady = () =>{}
 
         wx.redirectTo({
           url: '/pages/login/index?redirectUrl=/' + page.route
