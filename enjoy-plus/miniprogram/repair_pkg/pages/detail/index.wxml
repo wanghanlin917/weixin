@@ -1,7 +1,15 @@
 <scroll-view scroll-y enhanced show-scrollbar="{{false}}">
   <view class="repair-detail">
     <view class="polyline">
-      <map style="width: 100%; height: 100%;" scale="16" latitude="{{latitude}}" longitude="{{longitude}}"></map>
+      <!--小程序自带的地图组件-->
+      <map
+        style="width: 100%; height: 100%;"
+        scale="{{scale}}"
+        markers="{{markers}}"
+        polyline="{{polyline}}"
+        latitude="{{latitude}}"
+        longitude="{{longitude}}"
+      ></map>
     </view>
 
     <van-cell-group border="{{false}}" title="房屋信息">
